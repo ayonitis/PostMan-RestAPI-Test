@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906476602915",
+    "project_id": "platzistore-357df",
+    "storage_bucket": "platzistore-357df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906476602915:android:b2d3575bbd401e83cc9396",
+        "android_client_info": {
+          "package_name": "com.creativeinstitute.platzistore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_lgOC4TjKkhof4nvBTQxMkeGCuTorlNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,117 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Lottie Image -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/registerImage1"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/ecom_3" />
+
+    <!-- First Name Input -->
+    <EditText
+        android:id="@+id/firstnameId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_name"
+        android:background="@drawable/input_box_background"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/registerImage1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/input_box_background"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/firstnameId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="text" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:background="@drawable/input_box_background"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/emailId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword" />
+
+    <!-- Confirm Password Input -->
+    <EditText
+        android:id="@+id/confirmPasswordId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:background="@drawable/input_box_background"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/passwordId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:inputType="textPassword" />
+
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:background="@drawable/register_button_background"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/confirmPasswordId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp" />
+
+    <!-- Login Text -->
+    <TextView
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_an_account_login"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
